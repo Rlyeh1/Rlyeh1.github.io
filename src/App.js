@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import Knuckles from './Images/Knuckles.jpg';
 import './App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
           {/*Edit <code>src/App.js</code> and save to reload.*/}
           Hola pa aqui estaria el sitio web
         </p>
+        <img src={Knuckles} className="Knuckles" alt="Ugandan" />
         <a
           className="App-link"
           href="https://reactjs.org"
