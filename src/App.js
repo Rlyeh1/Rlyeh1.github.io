@@ -11,10 +11,14 @@ function App() {
           {/*Edit <code>src/App.js</code> and save to reload.*/}
           Hola pa aqui estaria el sitio web
         </p>
-        <img src={Knuckles} className="Knuckles" alt="Ugandan" />
+        <img src={Knuckles}
+         className="Knuckles"
+         alt="Ugandan"
+         width={300}
+         height={300}/>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.youtube.com/watch?v=NhKVUFVCjnA&ab_channel=BAUTIELCRACK"
           target="_blank"
           rel="noopener noreferrer"
         >
