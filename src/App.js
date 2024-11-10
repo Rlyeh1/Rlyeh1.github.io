@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import Knuckles from './Images/Knuckles.jpg';
 import './App.css';
+import Slider from './Components/Slider/Slider.js'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           {/*Edit <code>src/App.js</code> and save to reload.*/}
           Hola pa aqui estaria el sitio web
         </p>
+        <Slider />
         <img src={Knuckles}
          className="Knuckles"
          alt="Ugandan"
