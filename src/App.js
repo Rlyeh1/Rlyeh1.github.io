@@ -2,9 +2,19 @@ import logo from './logo.svg';
 import Knuckles from './Images/Knuckles.jpg';
 import './App.css';
 import Slider from './Components/Slider/Slider.js';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000); // Update every second
+    // Clean up the interval on component unmount
+    return () => clearInterval(timer);
+  }, []);  // Empty dependency array to run this effect only once after mount
+
   useEffect(() => {
     const next = document.querySelector('.next');
     const prev = document.querySelector('.prev');
@@ -39,7 +49,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hola pa aqui estaria el sitio web</p>
+        <p>
+          <h2>Today is {currentTime.toLocaleDateString()} and the time now is {currentTime.toLocaleTimeString()}.</h2>
+          Hola pa aqui estaria el sitio web</p>
         <div><Slider /></div>
         <img
           src={Knuckles}

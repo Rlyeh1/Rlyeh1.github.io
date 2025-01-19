@@ -71,8 +71,8 @@ function Slider(){
         </div>
 
         <div className="button">
-            <button className="prev"><i class="fa-solid fa-arrow-left"></i></button>
-            <button className="next"><i class="fa-solid fa-arrow-right"></i></button>
+            <button className="prev"><i className="fa-solid fa-arrow-left"></i></button>
+            <button className="next"><i className="fa-solid fa-arrow-right"></i></button>
         </div>
 
     </div>
