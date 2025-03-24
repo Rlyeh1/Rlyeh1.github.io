@@ -20,7 +20,7 @@ function Slider(){
         // Add more slides as needed
     ];
     return(
-        <div className="container">
+    <div className="container">
 
         <div className= "slide">
 
