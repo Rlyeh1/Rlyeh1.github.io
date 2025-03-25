@@ -1,7 +1,6 @@
   import logo from './logo.svg';
   import Knuckles from './Images/Knuckles.jpg';
   import './App.css';
-  import Slider from './Components/Slider/Slider';
   import { useState, useEffect } from 'react';
 
   function App() {
@@ -77,9 +76,6 @@
             <p>{message || "Loading..."}</p>
           </div>
           {/* Slider Component */}
-          <div className="slider-container">
-            <Slider />
-          </div>
     
           {/* Knuckles Image Below the Slider */}
           <div className="Knuckles">
