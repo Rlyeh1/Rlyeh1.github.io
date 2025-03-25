@@ -1,7 +1,7 @@
   import logo from './logo.svg';
   import Knuckles from './Images/Knuckles.jpg';
   import './App.css';
-  import Slider from './Components/Slider/Slider.js';
+  import Slider from './Components/Slider/Slider';
   import { useState, useEffect } from 'react';
 
   function App() {
@@ -75,17 +75,24 @@
           <div>
             <h1>API Response:</h1>
             <p>{message || "Loading..."}</p>
-            <h1>API Response:</h1>
           </div>
-
-          <div><Slider /></div>
-          <img
-            src={Knuckles}
-            className="Knuckles"
-            alt="Ugandan"
-            width={300}
-            height={300}
-          />
+          {/* Slider Component */}
+          <div className="slider-container">
+            <Slider />
+          </div>
+    
+          {/* Knuckles Image Below the Slider */}
+          <div className="Knuckles">
+            <img
+              src={Knuckles}
+              className="Knuckles-img"
+              alt="Ugandan"
+              width={300}
+              height={300}
+            />
+          </div>
+    
+          {/* Learn React Link */}
           <a
             className="App-link"
             href="https://www.youtube.com/watch?v=NhKVUFVCjnA&ab_channel=BAUTIELCRACK"

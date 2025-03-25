@@ -1,8 +1,9 @@
+
 .App {
   text-align: center;
 }
 
-.Knuckles{
+.Knuckles-img{
   border-radius: 50%;
 }
 
@@ -22,7 +23,8 @@
 
 .App-header {
   background-color: #eee;
-  min-height: 100vh;
+  min-height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
