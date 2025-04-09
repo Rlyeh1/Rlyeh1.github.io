@@ -3,8 +3,10 @@
   import './HomePage.css';
   import { useState, useEffect } from 'react';
   import { Link } from 'react-router-dom';
+  import useAuth from '../Hooks/useAuth';
 
   function HomePage() {
+    const user = useAuth();
     const [currentTime, setCurrentTime] = useState(new Date());
 
     useEffect(() => {
@@ -51,6 +53,14 @@
                 <button>Casa 3</button>
             </Link>
             </div>
+            <div>{user?(
+              <>
+              <p className='xd'> Como estas {user.userName}!</p>
+              <p className='xd'>Eres {user.role}</p>
+              </>
+            ):(
+              <p>Please log in to see your content.</p>
+            )}</div>
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             <h2>Today is {currentTime.toLocaleDateString()} and the time now is {currentTime.toLocaleTimeString()}.</h2>

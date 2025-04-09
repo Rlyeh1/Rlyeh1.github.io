@@ -47,3 +47,8 @@
       transform: rotate(360deg);
     }
   }
+  .xd{
+    font-weight: 1000;
+    font-style: italic;
+    color: forestgreen;
+  }

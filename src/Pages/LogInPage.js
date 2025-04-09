@@ -21,7 +21,8 @@ function LogInPage() {
             if(data.token){
                 setToken(data.token);
                 alert("Login Successful");
-                //window.location.href = '/'; // Redirect to homepage
+                localStorage.setItem('token', data.token);
+                window.location.href = '/'; // Redirect to homepage
             }
             })
             .catch((error) => {
