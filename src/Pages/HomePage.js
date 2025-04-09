@@ -38,6 +38,9 @@
           <header className="App-header">
             <h1>Bienvenido a las Casas</h1>
             <div>
+              <Link to ="/Login">
+                <button>Log In</button>
+              </Link>
             <Link to="/house/1">
                 <button>Casa 1</button>
             </Link>
